@@ -1,0 +1,14 @@
+{
+  "name": "Polymer_Visualization_Map",
+  "description": "",
+  "homepage": "",
+  "keywords": [
+  ],
+  "author": "",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#master",
+    "core-elements": "Polymer/core-elements#master",
+    "google-map": "GoogleWebComponents/google-map"
+  }
+}
