@@ -7,12 +7,23 @@
   <link rel="stylesheet" href="styles.css">
 
   <script src="bower_components/platform/platform.js"></script>
-  <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
   <link rel="import" href="bower_components/google-map/google-map.html">
+  <link rel="import" href="bower_components/core-ajax/core-ajax.html">
+  <link rel="import" href="bower_components/point-overlay/point-overlay.html">
+
 </head>
 
-<body unresolved>
-  <google-map latitude="37.779" longitude="-122.3892" zoom="13"></google-map>
-  <script src="main.js"></script>
+<body>
+  <template is="auto-binding">
+    <google-map map="{{map}}" latitude="37.779" longitude="-122.3892" zoom="13"></google-map>
+    <point-overlay map="{{map}}" data={{data}}></point-overlay>
+    <core-ajax
+        url="bower_components/simplified-traffic-data/accidents.json"
+        handleAs="json"
+        response="{{data}}"
+        auto>
+    </core-ajax>
+    <script src="main.js"></script>
+  </template>
 </body>
 </html>

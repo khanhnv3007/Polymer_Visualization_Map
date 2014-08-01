@@ -9,6 +9,8 @@
   "dependencies": {
     "polymer": "Polymer/polymer#master",
     "core-elements": "Polymer/core-elements#master",
-    "google-map": "GoogleWebComponents/google-map"
+    "google-map": "GoogleWebComponents/google-map",
+    "point-overlay": "brendankenny/point-overlay",
+    "simplified-traffic-data": "brendankenny/simplified-traffic-data"
   }
 }
